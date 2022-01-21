@@ -40,9 +40,9 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 const answers = [];
 for(let i = 0; i < bigOrSmallArray.length; i++) {
   if(bigOrSmallArray[i] > 100) {
-      console.log("big");
+      bigOrSmallArray.push("big");
   } else { // Alternative: } else if(bigOrSmallArray[i] <= 100) {
-      console.log("small");
+      bigOrSmallArray.push("small");
   }
 }
 

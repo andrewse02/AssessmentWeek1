@@ -15,6 +15,23 @@ let noSpace = false;
 const passwordChecks = [];
 let pass = true;
 
+// // This is a basic way to create a function
+// // Scott will explain this and how it works on Monday, but if you wanna try it out, here it is
+// function validatePassword() {
+//     reader.question("Validate your password: ", function (answer) {
+//         if (answer.length >= 10) {
+//             console.log("Valid Password!");
+//             return reader.close();
+//         } else {
+//             console.log("Your password must be at least 10 characters!");
+//             validatePassword(); // This will call the function again to attempt to re-validate the password
+//         }
+//     });
+// };
+
+// // We have to get the function started here
+// validatePassword();
+
 reader.question("Validate your password: ", function(password) {
     if(password.length >= 10) length = true;
     if(numberRegEx.test(password)) number = true;
